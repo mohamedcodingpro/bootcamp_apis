@@ -1,17 +1,17 @@
 {
   "name": "bootcamp_apis",
   "version": "1.0.0",
-  "description": "Bootcamp APIs and AlpineJS widgets",
+  "description": "APIs for Bootcamp Widgets",
   "main": "server.js",
   "scripts": {
-    "start": "node server.mjs"
+    "start": "node server.js",
+    "build": "echo 'No build step defined'"
   },
   "dependencies": {
     "express": "^4.18.2"
-  }
-  {
-    "type": "module",
-  
-  }
-  
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "type": "module"
 }
