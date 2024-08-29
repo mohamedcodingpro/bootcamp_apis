@@ -1,10 +1,10 @@
 {
   "name": "bootcamp_apis",
   "version": "1.0.0",
-  "description": "APIs for Bootcamp Widgets",
+  "description": "APIs for Bootcamp ",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node index.js",
     "build": "echo 'No build step defined'"
   },
   "dependencies": {
