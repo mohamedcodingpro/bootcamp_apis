@@ -1,66 +1,98 @@
-/* style.css */
+/* Global Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-color: #59a7e3;
+    color: #333;
+    line-height: 1.6;
 }
 
+/* Header Styles */
+h1 {
+    text-align: center;
+    padding: 20px 0;
+    color: #d35400;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+/* Widget Container */
 .widget {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
     background: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 320px;
-    text-align: center;
-    transition: transform 0.3s ease;
 }
 
-.widget:hover {
-    transform: translateY(-5px);
+.widget h2 {
+    color: #e67e22;
+    margin-bottom: 15px;
 }
 
-h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333333;
-}
-
-input, textarea, button {
+/* Input Styles */
+input[type="text"],
+input[type="number"] {
     width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box;
     font-size: 16px;
 }
 
-input:focus, textarea:focus {
-    border-color: #007bff;
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #e67e22;
     outline: none;
 }
 
+/* Button Styles */
 button {
-    background-color: #007bff;
-    color: #ffffff;
+    width: 100%;
+    background-color: #e67e22;
+    color: #fff;
     border: none;
+    padding: 10px;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 16px;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #d35400;
 }
 
-p {
-    font-size: 16px;
-    color: #555555;
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #f8f8f8;
+    margin-top: 30px;
+    border-top: 5px solid #e67e22;
 }
 
-span {
-    font-weight: bold;
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .widget {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        font-size: 14px;
+    }
 }
